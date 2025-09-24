@@ -1,33 +1,59 @@
 body {
     margin: 0;
     font-family: 'Times New Roman', sans-serif; 
-    color: white;
+    color: rgb(159, 96, 247);
     background: url('BG.png') center/cover no-repeat fixed;
   }
   
   .artist {
     position: absolute;
-    font-weight: bold;             
-    font-style: normal;           
-    font-size: 24px;              
-    color: #ff00ff;                 
-    text-shadow: 2px 2px 4px #000;  
-    white-space: nowrap; 
+    font-weight: bold;
+    font-size: 26px;
+    color: #ff06ac;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px #ffffff;
+    animation: floaty 5s ease-in-out infinite,
+               colorShift 30s linear infinite;
   }
   
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  @keyframes colorShift {
+    0%   { color: #f627b1; text-shadow: 1px 1px 2px #ffb3e6; }  
+    20%  { color: #7703fc; text-shadow: 1px 1px 2px #cbb2ff; }  
+    40%  { color: #04fffb; text-shadow: 1px 1px 2px #b2fffc; }  
+    60%  { color: #105ef9; text-shadow: 1px 1px 2px #b2e0ff; }  
+    80%  { color: #ffe600; text-shadow: 1px 1px 2px #fff7b2; }  
+    100% { color: #f627b1; text-shadow: 1px 1px 2px #ffb3e6; }   
+  }
+  
+  
+
   .container {
-    margin-top: 120vh;        
-    background: rgba(97, 117, 166, 0.157); /* almost transparent black box */
-    padding: 40px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;        /* soft rounded corners */
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+    margin-top: 120vh;   
+    display: flex;  
+    justify-content: center;
+    gap: 40px;          
   }
   
+  .container1,
+  .container2 {
+    background: rgba(30, 48, 94, 0.5);
+    padding: 40px;
+    width: 600px;
+    border-radius: 1px;
+    color: white;
+  }
+
   p {
-    margin: 0;
+    margin: 0 0 20px 0; 
     font-size: 18px;
     line-height: 1.6;
   }
+  
   
