@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', sans-serif; 
+    color: white;
+    background: url('BG.png') center/cover no-repeat fixed;
+  }
+  
+  .artist {
+    position: absolute;
+    font-weight: bold;             
+    font-style: normal;           
+    font-size: 24px;              
+    color: #ff00ff;                 
+    text-shadow: 2px 2px 4px #000;  
+    white-space: nowrap; 
+  }
+  
+  .container {
+    margin-top: 120vh;        
+    background: rgba(97, 117, 166, 0.157); /* almost transparent black box */
+    padding: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;        /* soft rounded corners */
+  }
+  
+  p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
